@@ -9,7 +9,6 @@
 #  gau, gf
 #  made by nothingnhm
 # ======================================================
-
 set -e
 
 # Check for root
@@ -122,10 +121,9 @@ wget https://raw.githubusercontent.com/tomnomnom/gf/master/examples/redirect.jso
 cd ~
 
 
-echo "\n==========================================="
-echo "[✔] All tools installed successfully!"
-echo "[✔] Make sure to restart your terminal."
 echo "==========================================="
-
+echo "[✔] All tools installed successfully!"
+echo "[✔] Restart your terminal or run: source ~/.bashrc"
+echo "==========================================="
 
 #  made by nothingnhm
