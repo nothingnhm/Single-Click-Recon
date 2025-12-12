@@ -9,7 +9,6 @@
 #  gau, gf
 #  made by nothingnhm
 # ======================================================
-
 set -e
 
 # Check for root
@@ -67,7 +66,14 @@ go install github.com/tomnomnom/assetfinder@latest
 
 
 echo "[+] Installing Findomain..."
-wget https://github.com/findomain/findomain/releases/latest/download/findomain-linux
+rm -f /usr/bin/findomain
+cd /opt
+git clone https://github.com/Findomain/Findomain.git findomain-src 2>/dev/null || true
+cd findomain-src
+git pull || true
+cargo build --release
+cp target/release/findomain /usr/bin/findomain
+cd ~/findomain/releases/latest/download/findomain-linux
 chmod +x findomain-linux
 mv findomain-linux /usr/bin/findomain
 
@@ -116,4 +122,5 @@ echo "\n==========================================="
 echo "[✔] All tools installed successfully!"
 echo "[✔] Make sure to restart your terminal."
 echo "==========================================="
+
 #  made by nothingnhm
