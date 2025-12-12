@@ -57,8 +57,8 @@ Everything else is automated.
 ### 1️⃣ Clone the repo
 
 ```bash
-git clone https://github.com/YourUser/BountyReconInstaller
-cd BountyReconInstaller
+git clone https://github.com/nothingnhm/Single-Click-Recon.git
+cd Single-Click-Recon
 ```
 
 ### 2️⃣ Make script executable
